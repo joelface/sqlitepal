@@ -1,0 +1,19 @@
+language: php
+dist: bionic
+
+php:
+    - 7.4
+
+before_install:
+    - phpenv config-rm xdebug.ini
+
+install:
+    - travis_retry composer install --no-progress --prefer-dist
+
+script:
+    - composer run checkall
+
+cache:
+    directories:
+        - vendor
+        - $HOME/.composer/cache
