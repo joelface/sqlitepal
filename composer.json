@@ -1,6 +1,8 @@
 {
     "name": "joelface/sqlitepal",
     "description": "A simple, lightweight SQLite3 library for PHP",
+    "keywords": ["sqlite", "database"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Joel Bruick"
