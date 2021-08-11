@@ -23,7 +23,7 @@ class Statement implements IteratorAggregate
     }
 
     /**
-     * Execute the prepared statement and return its ResultSet.
+     * Execute the prepared statement.
      */
     public function execute(array $params): self
     {
